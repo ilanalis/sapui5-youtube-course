@@ -4,8 +4,14 @@ sap.ui.define(
     "use strict";
 
     return Controller.extend("ui5.product.list.controller.App", {
-      onPressCreateNewProduct: () => {
-        MessageToast.show("New Product created!");
+      onPressCreateNewProduct: function () {
+        const oResourceBundle = this.getOwnerComponent()
+          .getModel("i18n")
+          .getResourceBundle();
+
+        MessageToast.show(
+          oResourceBundle.getText("messageProductCreated", ["macbook"])
+        );
       },
     });
   }
