@@ -6,15 +6,24 @@
     <title>My Products</title>
     <script
       id="sap-ui-bootstrap"
-      src="https://ui5.sap.com/resources/sap-ui-core.js"
+      src="https://ui5.sap.com/1.136.13/resources/sap-ui-core.js"
       data-sap-ui-theme="sap_horizon"
       data-sap-ui-compatVersion="edge"
       data-sap-ui-async="true"
       data-sap-ui-resourceroots='{
             "ui5.product.list": "./"
         }'
-      data-sap-ui-onInit="module:ui5/product/list/index"
+      data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
     ></script>
   </head>
-  <body class="sapUiBody" id="content"></body>
+  <body class="sapUiBody" id="content">
+    <div
+      data-sap-ui-component
+      data-name="ui5.product.list"
+      data-id="container"
+      data-settings='{
+      "id": "ui5.demo"
+    }'
+    ></div>
+  </body>
 </html>
