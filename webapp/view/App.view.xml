@@ -3,5 +3,5 @@
     displayBlock="true"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <Button text='this is my button!!!!' press="onPressCreateNewProduct"/>
+    <Button text='Create new Product' press="onPressCreateNewProduct"/>
 </mvc:View>
