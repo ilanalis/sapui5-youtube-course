@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ilanalis/sapui5-youtube-course#readme",
   "devDependencies": {
-    "@ui5/cli": "^4.0.39"
+    "@ui5/cli": "^4.0.39",
+    "ui5-middleware-livereload": "^3.2.0"
   }
 }
